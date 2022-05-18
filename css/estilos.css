@@ -1,0 +1,168 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logoHeader {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+.logoHeader .spanLogo {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slide img {
+  height: 80vh;
+}
+
+.titulosHeightJapon, .titulosHeightFrancia, .titulosHeightRusia {
+  height: 70px;
+  background-color: brown;
+  color: aliceblue;
+}
+.titulosHeightJapon .textoTamaño, .titulosHeightFrancia .textoTamaño, .titulosHeightRusia .textoTamaño {
+  font-size: 18px;
+}
+
+/* =============================PAGINA LATINA============== */
+.textoBg {
+  background-color: brown;
+}
+
+.borderMara {
+  border: 2px solid brown;
+}
+
+.btn--white {
+  color: brown;
+  text-transform: capitalize;
+  text-shadow: 0 0 5px white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn--black {
+  color: brown;
+  text-transform: capitalize;
+  text-shadow: 0 0 5px white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn--white {
+  color: brown;
+  text-transform: capitalize;
+  text-shadow: 0 0 5px white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn--black {
+  color: brown;
+  text-transform: capitalize;
+  text-shadow: 0 0 5px white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mainInfo {
+  border-radius: 25px;
+  background-color: rgb(151, 28, 28);
+}
+.mainInfo label {
+  font-size: 18px;
+  color: white;
+  margin-left: 5px;
+}
+.mainInfo input {
+  border-radius: 5px;
+}
+.mainInfo button {
+  margin-left: 15px;
+  border-radius: 5px;
+  background-color: black;
+}
+.mainInfo .checkboxInfo {
+  margin-left: 1px;
+}
+.mainInfo .articleInfo {
+  background-color: black;
+}
+.mainInfo .articleInfo h3 {
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.bgMarquee {
+  background-color: black;
+}
+.bgMarquee marquee {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px brown;
+}
+.bgMarquee p {
+  margin-top: 15px;
+}
+
+.box1 {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box2 {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+.africawarlord-icon,
+.ira-icon,
+.albania-icon {
+  height: 250px;
+  width: 100%;
+  border: 2px solid black;
+}
+.africawarlord-icon p,
+.ira-icon p,
+.albania-icon p {
+  display: flex;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 100%;
+}
+
+.africawarlord-icon {
+  background-image: url("../img/info/africawarlord.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.albania-icon {
+  background-image: url("../img/info/albania.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ira-icon {
+  background-image: url("../img/info/ira.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */

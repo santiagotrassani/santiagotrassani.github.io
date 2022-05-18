@@ -1,0 +1,177 @@
+$color:black;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoHeader{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    .spanLogo{
+        color: red;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.slide img{
+    height: 80vh;
+}
+
+// ====================== USO DE EXTEND
+
+.titulosHeightJapon{
+    height: 70px;
+    background-color: brown;
+    color: aliceblue;
+    .textoTamaño{
+        font-size: 18px;
+    }
+}
+
+.titulosHeightRusia{
+    @extend .titulosHeightJapon;
+}
+
+.titulosHeightFrancia{
+    @extend .titulosHeightJapon;
+}
+/* =============================PAGINA LATINA============== */
+
+.textoBg{
+    background-color: brown;
+}
+
+.borderMara{
+    border: 2px solid brown;
+}
+
+//============================== PAGINA VICTORIANA
+
+// =============================USO DE MAPA
+
+$mapa1: (
+    red1: white,
+    red2: black,
+    red3: white,
+    red4: black
+
+);
+
+@each $red1, $colores in $mapa1 {
+    .btn--#{$colores} {
+        color: brown;
+        text-transform: capitalize;
+        text-shadow: 0 0 5px white;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+}
+
+
+// ===========================PAGINA INFO=====================
+
+.mainInfo{
+    border-radius: 25px;
+    background-color: rgb(151, 28, 28);
+    label{
+        font-size: 18px;
+        color: white;
+        margin-left: 5px;
+    }
+    input{
+        border-radius: 5px;
+    }
+
+    button{
+        margin-left: 15px;
+        border-radius: 5px;
+        background-color: $color;
+    }
+
+    .checkboxInfo{
+        margin-left: 1px;
+    }
+
+    .articleInfo{
+        background-color: $color;
+        h3{
+            font-size: 35px;
+            font-family:'Times New Roman', Times, serif;
+            color: white;
+        }
+    }
+}
+
+.bgMarquee{
+    background-color: $color;
+    marquee{
+        text-align: center;
+        font-size: 25px;
+        font-family:'Times New Roman', Times, serif;
+        color: white;
+        text-shadow: 2px 2px 5px black,
+        2px 2px 5px brown;
+    }
+    p{
+        margin-top: 15px;
+    }
+}
+
+// ======================= USO DE MIXIN
+
+@mixin sizes {
+    background-color: $color;
+    border: 2px solid black;
+    color: white;
+}
+
+.box1{
+    @include sizes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.box2{
+    @include sizes;
+}
+
+// =======================================LOGO FINAL======================================
+
+//=========================== USO DE EACH
+
+.africawarlord-icon,
+.ira-icon,
+.albania-icon {
+    height: 250px;
+    width: 400px / 400px * 100% ;
+    border: 2px solid $color;
+    p{
+        display: flex;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 30px / 30px * 100%;
+    }
+}
+
+@each $danger in africawarlord , albania , ira {
+    .#{$danger}-icon {
+        background-image: url("../img/info/#{$danger}.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
